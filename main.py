@@ -5,7 +5,7 @@ import os
 
 EMAIL = os.environ.get("EMAIL_KEY")
 PASSWORD = os.environ.get("PASSWORD_KEY")
-BLOG_ENDPOINT = "https://api.npoint.io/71c0c487c706e9f149fa"
+BLOG_ENDPOINT = os.environ.get("NPOINT_ENDPOINT")
 
 app = Flask(__name__)
 
